@@ -5,18 +5,23 @@ import Count from './Count';
 import Input from './Input';
 
 import Event from './Event';
+import Lists from './Child';
 class App extends Component{
 
     constructor(props){
         super(props);
        
         this.changeDefaultCount = this.changeDefaultCount.bind(this);
+        this.handleItemChange = this.handleItemChange.bind(this);
         this.state = {
 
             defaultCount:1
         }
     }
-
+    
+    handleItemChange(item){
+        console.log(item);
+    }
     changeDefaultCount(){
         
         this.setState({
@@ -31,6 +36,10 @@ class App extends Component{
                     <Count count={this.state.defaultCount}/>
                     {/*<Input />  */}
                     <Event />
+                    <Lists 
+                        list={[{text:1},{text:2}]}
+                        handleItemChange ={this.handleItemChange}
+                    />
                 </div>
               )
     }
