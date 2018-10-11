@@ -1,18 +1,16 @@
 
 import React from 'react';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
-import Home from './../views/Home';
+import BasicExample from './../views/Home';
 import Detail from './../views/Detail';
-
+import AuthExample from './../views/Auth';
 const routes = (
-            
             <div>
-                
                 <BrowserRouter>
                     <Switch>
-
-                        <Route path='/' component={Home} exact />
-                        <Route path='/Detail' component={Detail} exact />
+                        <Route path='/' component={BasicExample} exact />
+                        <Route path='/detail' component={Detail} exact />
+                        <Route path='/auth' component={AuthExample} exact />
                     </Switch>
                 </BrowserRouter>
             </div>
