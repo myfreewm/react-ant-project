@@ -2,6 +2,8 @@
 import React,{Component} from 'react';
 import {BrowserRouter as Router ,Route,Link} from 'react-router-dom';
 
+import TestAjax from './TestAjax';
+
 const BasicExample = () => (
 
             <Router>
@@ -27,7 +29,7 @@ const BasicExample = () => (
 
 const Home = () => (
             <div>
-                <h2>Home</h2>
+                <TestAjax />
             </div>
         );
 const About = () => (
