@@ -1,6 +1,5 @@
 
 import api from './api';
-import http from './http';
+import {fetch,post} from './tool';
 
-export  {api};
-export {http};
+export  {api,fetch,post};

@@ -5,7 +5,7 @@ axios.defaults.baseURL= process.env.API_ROOT||""; // 设置默认URL
 
 axios.defaults.timeout = 10000;          // 设置超时时间
 
-//axios.defaults.headers = {'X-Resquested-With':'XMLHttpRequest'};
+axios.defaults.headers = {'X-Resquested-With':'XMLHttpRequest'};
 
 // 配置请求拦截
 
@@ -20,7 +20,7 @@ axios.interceptors.request.use(config => {
 
 axios.interceptors.response.use(response => {
 
-    if(response.data.errCode === 200 || response.data.errCode === 200){
+    if(response.status === 200){
 
         return response.data;
     }else{

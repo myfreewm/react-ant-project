@@ -13,7 +13,8 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "url-search-params-polyfill": "^5.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -21,11 +22,10 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy":{
-      "/*":{
-          "target":"https://www.2beauti.com",
-          "changeOrigin":true
-      }
+  "proxy": {
+    "/*": {
+      "target": "https://www.2beauti.com",
+      "changeOrigin": true
+    }
   }
-
 }

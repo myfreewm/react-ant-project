@@ -1,1 +1,3 @@
- console.log("hello world");
+import TestServer from './TestServer';
+
+export{TestServer}
