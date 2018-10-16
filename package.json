@@ -20,5 +20,12 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "proxy":{
+      "/*":{
+          "target":"https://www.2beauti.com",
+          "changeOrigin":true
+      }
   }
+
 }

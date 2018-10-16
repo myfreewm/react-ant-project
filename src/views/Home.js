@@ -2,6 +2,7 @@
 import React,{Component} from 'react';
 import {BrowserRouter as Router ,Route,Link} from 'react-router-dom';
 
+import TestServer from './../components/share/TestServer'
 const BasicExample = () => (
 
             <Router>
@@ -27,7 +28,7 @@ const BasicExample = () => (
 
 const Home = () => (
             <div>
-                <h2>Home</h2>
+                <TestServer />
             </div>
         );
 const About = () => (
