@@ -9,11 +9,12 @@ import PreventForm from './../views/PreventForm';
 import NotMatch from './../views/NotMatch';
 import Recursive from './../views/Recursive';
 import Siders from './../views/Siders';
-const routes = (
+import TodoApp from './../views/TodoApp';
+const Routers = (
             <div>
                 <BrowserRouter>
                     <Switch>
-                        <Route path='/' component={BasicExample} exact />
+                        <Route path='/placeholder' component={BasicExample} exact />
                         <Route path='/detail' component={Detail} exact />
                         <Route path='/auth' component={AuthExample} exact />
                         <Route path='/customLink' component={CustomLink} exact />
@@ -21,11 +22,12 @@ const routes = (
                         <Route path='/notMatch' component={NotMatch} exact />
                         <Route path='/recursive' component={Recursive} exact />
                         <Route path='/siders' component={Siders} exact />
-                        <Redirect to='/' /> 
+                        <Route path='/todo' component={TodoApp} exact />
+                        <Redirect to='/todo' /> 
                     </Switch>
                 </BrowserRouter>
             </div>
         
         )
 
-export default routes;
+export default Routers;
